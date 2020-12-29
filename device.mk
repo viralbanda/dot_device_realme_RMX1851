@@ -39,11 +39,8 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc
-
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    RealmeParts
+    init.qcom.rc \
+    init.realmehub.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -150,10 +147,15 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
+libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# RealmeHub
+PRODUCT_PACKAGES += \
+     RealmeHub \
+     RealmeDoze
 
 # Wallpapers
 PRODUCT_PACKAGES += \
