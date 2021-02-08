@@ -15,9 +15,6 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Whether to post reset runnable for all clients -->
-    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
-
     <!-- The list of vendor package signatures that should also be considered
          platform signatures, specifically for use on devices with a vendor partition. -->
     <string-array name="config_vendorPlatformSignatures" translatable="false">
