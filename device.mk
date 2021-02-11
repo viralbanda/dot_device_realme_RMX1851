@@ -103,12 +103,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710
 
-# Livedisplay
-ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-endif
-
 # Power
 PRODUCT_PACKAGES += \
      android.hardware.power-service.realme_sdm710
