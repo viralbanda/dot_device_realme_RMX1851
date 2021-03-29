@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-PRODUCT_NAME := aosp_RMX1851
+PRODUCT_NAME := legion_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme
@@ -36,3 +36,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="RMX1851" \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210305.006 7119741 release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by system build.prop
+    BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys"
