@@ -16,6 +16,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2244
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
