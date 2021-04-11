@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-PRODUCT_NAME := legion_RMX1851
+PRODUCT_NAME := dot_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme

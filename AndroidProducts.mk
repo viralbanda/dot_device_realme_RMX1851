@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_RMX1851.mk
+    $(LOCAL_DIR)/dot_RMX1851.mk
